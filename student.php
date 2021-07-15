@@ -100,7 +100,7 @@
         <input type="radio" name="gender" <?php if (isset($gender) && $gender == "other") echo "checked"; ?>>Other
         <span class="error"> <?php echo $genderErr; ?></span>
         <br><br>
-        <input type="submit" name="submit" value="Submit" onclick="myFunction()">
+        <a href="biology.php"><input type="submit" name="submit" value="Submit" onclick="myFunction()"></a>
 
     </form>
 
