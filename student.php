@@ -7,6 +7,11 @@
             color: darkred;
         }
     </style>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerPHP = Biology.php;
+        }
+    </script>
 </head>
 
 <body>
@@ -48,7 +53,7 @@
         } else {
             $faculty = test_input($_POST["faculty"]);
         }
-       
+
 
         if (empty($_POST["phoneno"])) {
             $phonenoErr = "Phone Number is required";
@@ -91,11 +96,12 @@
         <br><br>
         Gender
         <input type="radio" name="gender" <?php if (isset($gender) && $gender == "female") echo "checked"; ?>>Female
-        <input type="radio" name="gender" <?php if (isset($gender) && $gender == "male") echo "checked"; ?> >Male
-        <input type="radio" name="gender" <?php if (isset($gender) && $gender == "other") echo "checked"; ?> >Other
+        <input type="radio" name="gender" <?php if (isset($gender) && $gender == "male") echo "checked"; ?>>Male
+        <input type="radio" name="gender" <?php if (isset($gender) && $gender == "other") echo "checked"; ?>>Other
         <span class="error"> <?php echo $genderErr; ?></span>
         <br><br>
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="submit" value="Submit" onclick="myFunction()">
+
     </form>
 
 </body>
