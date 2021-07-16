@@ -94,7 +94,7 @@
         <input type="number" name="phoneno" placeholder="phone number...">
         <span class="error"> <?php echo $phonenoErr; ?></span>
         <br><br>
-        Gender
+        Gender"
         <input type="radio" name="gender" <?php if (isset($gender) && $gender == "female") echo "checked"; ?>>Female
         <input type="radio" name="gender" <?php if (isset($gender) && $gender == "male") echo "checked"; ?>>Male
         <input type="radio" name="gender" <?php if (isset($gender) && $gender == "other") echo "checked"; ?>>Other

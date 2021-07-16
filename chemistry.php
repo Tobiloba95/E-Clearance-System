@@ -51,7 +51,7 @@
         <input type="text" name="name" placeholder="full name...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
-        Selection
+        Selection:
         <input type="radio" name="option" <?php if (isset($tick) && $gender == "Cleared") echo "checked"; ?>>Cleared
         <input type="radio" name="option" <?php if (isset($tick) && $gender == "Not cleared") echo "checked"; ?>>Not Cleared
         <span class="error"> <?php echo $tickErr; ?></span>

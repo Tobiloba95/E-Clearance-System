@@ -45,9 +45,9 @@
     }
     ?>
 
-    <h2>Biochemistry Labouratory</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the Biochemistry Laboratory and is herby cleared.</p>
-    <form method="post" action="physics.php">
+    <h2>Mass Communication Labouratory</h2>
+    <p>This is to certify that this student has fully sttled his/her indebtedness to the Mass Communication Laboratory and is herby cleared.</p>
+    <form method="post" action="headdept.php">
         <input type="text" name="name" placeholder="full name...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
