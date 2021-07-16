@@ -7,7 +7,7 @@
             color: darkred;
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -47,16 +47,17 @@
 
     <h2>Biology Labouratory</h2>
     <p>This is to certify that this student has fully sttled his/her indebtedness to the Biology Laboratory and is herby cleared.</p>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="post" action="microbiology.php">
         <input type="text" name="name" placeholder="full name...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
         Selection
-        <input type="checkbox" name="option" <?php if (isset($tick) && $gender == "Cleared") echo "checked"; ?>>Cleared
-        <input type="checkbox" name="option" <?php if (isset($tick) && $gender == "Not cleared") echo "checked"; ?>>Not Cleared
+        <input type="radio" name="option" <?php if (isset($tick) && $gender == "Cleared") echo "checked"; ?>>Cleared
+        <input type="radio" name="option" <?php if (isset($tick) && $gender == "Not cleared") echo "checked"; ?>>Not Cleared
         <span class="error"> <?php echo $tickErr; ?></span>
         <br><br>
-        <a href="microbiology.php"><input type="submit" name="submit" value="Submit"></a>
+        <input type="submit" value="Submit">
+        <input type="hidden" name="next_phase" value="microbiology.php">
 
     </form>
 
