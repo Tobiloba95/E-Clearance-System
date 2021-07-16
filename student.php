@@ -78,7 +78,7 @@
     ?>
 
     <h2>Student Biodata</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="post" action="biology.php">
         <input type="text" name="name" placeholder="full name...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
