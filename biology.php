@@ -34,6 +34,7 @@
         } else {
             $tick = test_input($_POST["option"]);
         }
+        
     }
 
 
@@ -56,7 +57,7 @@
         <input type="radio" name="option" <?php if (isset($tick) && $gender == "Cleared") echo "checked"; ?>>Cleared
         <input type="radio" name="option" <?php if (isset($tick) && $gender == "Not cleared") echo "checked"; ?>>Not Cleared
         <span class="error"> <?php echo $tickErr; ?></span>
-        <br><br>
+        <br><br>   
         <input type="submit" value="Submit">
         <input type="hidden" name="next_phase" value="microbiology.php">
 
