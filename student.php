@@ -77,6 +77,11 @@
     }
     ?>
 
+    <img src="AUL.png"></img>
+    <p><b>PMB </b>001, Ipaja Post Office, Ayobo, Ipaja, Lagos</p>
+    <p><b>Email</b>:registrar@aul.edu.ng</p>
+    <p><b>CLEARANCE FORM FOR  ACADEMIC SESSION</b></p>
+    <p><b>GRADUATING STUDENT OF ANCHOR UNIVERSITY LAGOS</b></p>
     <h2>Student Biodata</h2>
     <form method="post" action="biology.php">
         <input type="text" name="name" placeholder="full name...">

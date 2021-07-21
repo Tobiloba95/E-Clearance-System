@@ -44,11 +44,15 @@
         return $data;
     }
     ?>
-
+    <img src="AUL.png"></img>
+    <p><b>PMB </b>001, Ipaja Post Office, Ayobo, Ipaja, Lagos</p>
+    <p><b>Email</b>:registrar@aul.edu.ng</p>
+    <p><b>CLEARANCE FORM FOR  ACADEMIC SESSION</b></p>
+    <p><b>GRADUATING STUDENT OF ANCHOR UNIVERSITY LAGOS</b></p>
     <h2>Physics Labouratory</h2>
     <p>This is to certify that this student has fully sttled his/her indebtedness to the Physics Laboratory and is herby cleared.</p>
     <form method="post" action="language.php">
-        <input type="text" name="name" placeholder="full name...">
+        <input type="text" name="name" placeholder="Name of Laboratory Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
         Selection:

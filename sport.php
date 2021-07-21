@@ -44,16 +44,15 @@
         return $data;
     }
     ?>
-
     <img src="AUL.png"></img>
     <p><b>PMB </b>001, Ipaja Post Office, Ayobo, Ipaja, Lagos</p>
     <p><b>Email</b>:registrar@aul.edu.ng</p>
     <p><b>CLEARANCE FORM FOR  ACADEMIC SESSION</b></p>
     <p><b>GRADUATING STUDENT OF ANCHOR UNIVERSITY LAGOS</b></p>
-    <h2>Biochemistry Labouratory</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the Biochemistry Laboratory and is herby cleared.</p>
-    <form method="post" action="physics.php">
-        <input type="text" name="name" placeholder="full name...">
+    <h2>SPORTS DIVISION</h2>
+    <p>This is to certify that this student has fully sttled his/her indebtedness to the Sports Division and is herby cleared.</p>
+    <form method="post" action="unilib.php">
+        <input type="text" name="name" placeholder="Name of Officer in charge...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
         Selection:
