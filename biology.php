@@ -46,7 +46,7 @@
         return $data;
     }
     ?>
-    <img src="AUL.png"></img>
+    <img src="pic/AUL.png"></img>
     <p><b>PMB </b>001, Ipaja Post Office, Ayobo, Ipaja, Lagos</p>
     <p><b>Email</b>:registrar@aul.edu.ng</p>
     <p><b>CLEARANCE FORM FOR  ACADEMIC SESSION</b></p>
