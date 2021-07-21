@@ -18,10 +18,10 @@
     $name = $tick = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST["name"])) {
-            $nameErr = "Name is required";
+        if (empty($_POST["faculty_name"])) {
+            $nameErr = "Dean's name is required";
         } else {
-            $name = test_input($_POST["name"]);
+            $name = test_input($_POST["faculty_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
                 $nameErr = "Only letters and white space allowed";
@@ -52,7 +52,7 @@
     <h2>FACULTY</h2>
     <p>This is to certify that this student has fully sttled his/her indebtedness to the Faculty and is herby cleared.</p>
     <form method="post" action="hor.php">
-        <input type="text" name="name" placeholder="Dean of Faculty...">
+        <input type="text" name="faculty_name" placeholder="Dean of Faculty...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
         Selection:

@@ -18,10 +18,10 @@
     $name = $tick = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST["name"])) {
-            $nameErr = "Name is required";
+        if (empty($_POST["ict_name"])) {
+            $nameErr = "ICT staff name is required";
         } else {
-            $name = test_input($_POST["name"]);
+            $name = test_input($_POST["ict_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
                 $nameErr = "Only letters and white space allowed";
@@ -52,7 +52,7 @@
     <h2>ICT UNIT</h2>
     <p>This is to certify that this student has fully sttled his/her indebtedness to the ICT Unit and is herby cleared.</p>
     <form method="post" action="sport.php">
-        <input type="text" name="name" placeholder="Name of ICT Staff...">
+        <input type="text" name="ict_name" placeholder="Name of ICT Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
         Selection:

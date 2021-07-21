@@ -18,10 +18,10 @@
     $name = $tick = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST["name"])) {
-            $nameErr = "Name is required";
+        if (empty($_POST["bursary_name"])) {
+            $nameErr = "Bursar's name is required";
         } else {
-            $name = test_input($_POST["name"]);
+            $name = test_input($_POST["bursary_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
                 $nameErr = "Only letters and white space allowed";
@@ -52,7 +52,7 @@
     <h2>BURSARY DEPARTMENT</h2>
     <p>This is to certify that this student is not owing the university and is hereby cleared</p>
     <form method="post" action="academic.php">
-        <input type="text" name="name" placeholder="Name of Bursary Staff...">
+        <input type="text" name="bursary_name" placeholder="Name of Bursary Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
         Selection:

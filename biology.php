@@ -18,11 +18,11 @@
     $name = $tick = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST["name"])) {
-            $nameErr = "Name is required";
+        if (empty($_POST["biology_name"])) {
+            $nameErr = "Biology staff name is required";
         } 
         else {
-            $name = test_input($_POST["name"]);
+            $name = test_input($_POST["biology_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
                 $nameErr = "Only letters and white space allowed";
@@ -54,7 +54,7 @@
     <h2>Biology Labouratory</h2>
     <p>This is to certify that this student has fully sttled his/her indebtedness to the Biology Laboratory and is herby cleared.</p>
     <form method="post" action="microbiology.php">
-        <input type="text" name="name" placeholder="Name of Laboratory Staff...">
+        <input type="text" name="biology_name" placeholder="Name of Laboratory Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
         Selection:

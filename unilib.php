@@ -18,10 +18,10 @@
     $name = $tick = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST["name"])) {
-            $nameErr = "Name is required";
+        if (empty($_POST["unilib_name"])) {
+            $nameErr = "Libarian's name is required";
         } else {
-            $name = test_input($_POST["name"]);
+            $name = test_input($_POST["unilib_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
                 $nameErr = "Only letters and white space allowed";
@@ -52,7 +52,7 @@
     <h2>UNIVERSITY LIBRARY</h2>
     <p>This is to certify that this student has fully sttled his/her indebtedness to the University Library and is herby cleared.</p>
     <form method="post" action="stuaff.php">
-        <input type="text" name="name" placeholder="Name of Library Staff...">
+        <input type="text" name="unilib_name" placeholder="Name of Library Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
         Selection:

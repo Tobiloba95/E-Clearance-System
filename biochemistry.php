@@ -18,20 +18,20 @@
     $name = $tick = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST["name"])) {
-            $nameErr = "Name is required";
+        if (empty($_POST["biochemistry_name"])) {
+            $nameErr = "Biochemistry staff name is required";
         } else {
-            $name = test_input($_POST["name"]);
+            $name = test_input($_POST["biochemistry_name"]);
             // check if name only contains letters and whitespace
             if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
                 $nameErr = "Only letters and white space allowed";
             }
         }
 
-        if (empty($_POST["option"])) {
+        if (empty($_POST["tick"])) {
             $tickErr = "Selection is required";
         } else {
-            $tick = test_input($_POST["option"]);
+            $tick = test_input($_POST["tick"]);
         }
     }
 
@@ -53,12 +53,12 @@
     <h2>Biochemistry Labouratory</h2>
     <p>This is to certify that this student has fully sttled his/her indebtedness to the Biochemistry Laboratory and is herby cleared.</p>
     <form method="post" action="physics.php">
-        <input type="text" name="name" placeholder="full name...">
+        <input type="text" name="biochemistry_name" placeholder="full name...">
         <span class="error"> <?php echo $nameErr; ?></span>
         <br><br>
         Selection:
-        <input type="radio" name="option" <?php if (isset($tick) && $gender == "Cleared") echo "checked"; ?>>Cleared
-        <input type="radio" name="option" <?php if (isset($tick) && $gender == "Not cleared") echo "checked"; ?>>Not Cleared
+        <input type="radio" name="tick" <?php if (isset($tick) && $gender == "Cleared") echo "checked"; ?>>Cleared
+        <input type="radio" name="tick" <?php if (isset($tick) && $gender == "Not cleared") echo "checked"; ?>>Not Cleared
         <span class="error"> <?php echo $tickErr; ?></span>
         <br><br>
         <input type="submit" name="submit" value="Submit">
