@@ -7,11 +7,8 @@
             color: darkred;
         }
     </style>
-    <script>
-        function myFunction() {
-            document.getElementById("demo").innerPHP = Biology.php;
-        }
-    </script>
+    <title>E-clearance</title>
+    
 </head>
 
 <body>
@@ -105,7 +102,7 @@
         <input type="radio" name="gender" <?php if (isset($gender) && $gender == "other") echo "checked"; ?>>Other
         <span class="error"> <?php echo $genderErr; ?></span>
         <br><br>
-        <a href="biology.php"><input type="submit" name="submit" value="Submit" onclick="myFunction()"></a>
+        <input type="submit" name="submit" value="Submit"></a>
 
     </form>
 
