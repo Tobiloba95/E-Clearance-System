@@ -65,7 +65,7 @@
         </div>
     </header>
     <h2>HEAD OF DEPARTMENT</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the Department and is herby cleared.</p>
+    <p>This is to certify that this student has fully settled his/her indebtedness to the Department and is herby cleared.</p>
     <form method="post" action="faculty.php">
         <input type="text" name="hod_name" placeholder="Name of Head of Department...">
         <span class="error"> <?php echo $nameErr; ?></span>

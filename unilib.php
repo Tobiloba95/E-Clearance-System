@@ -66,7 +66,7 @@
         </div>
     </header>
     <h2>UNIVERSITY LIBRARY</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the University Library and is herby cleared.</p>
+    <p>This is to certify that this student has fully settled his/her indebtedness to the University Library and is herby cleared.</p>
     <form method="post" action="stuaff.php">
         <input type="text" name="unilib_name" placeholder="Name of Library Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>

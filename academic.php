@@ -55,6 +55,7 @@
         return $data;
     }
     ?>
+    <header>
     <div class="logo-container">
         <img src="pic/AUL.png" alt="logo">
         <p><b>PMB </b>001, Ipaja Post Office, Ayobo, Ipaja, Lagos</p>
@@ -63,6 +64,7 @@
         <p><b>GRADUATING STUDENT OF ANCHOR UNIVERSITY LAGOS</b></p>
 
     </div>
+</header>
     <h2>ACADEMIC AFFAIRS DIVISION</h2>
     <p>This is to certify that the file of this student is up to date and is herby cleared.</p>
     <form method="post" action="security.php">

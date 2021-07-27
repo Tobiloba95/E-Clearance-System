@@ -66,7 +66,7 @@
         </div>
     </header>
     <h2>STUDENT AFFAIRS</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the Student Affairs and is herby cleared.</p>
+    <p>This is to certify that this student has fully settled his/her indebtedness to the Student Affairs and is herby cleared.</p>
     <form method="post" action="bursary.php">
         <input type="text" name="stuaff_name" placeholder="Student Affairs Officer...">
         <span class="error"> <?php echo $nameErr; ?></span>

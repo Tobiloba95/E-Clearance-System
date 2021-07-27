@@ -66,7 +66,7 @@
         </div>
     </header>
     <h2>Language Labouratory</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the Language Laboratory and is herby cleared.</p>
+    <p>This is to certify that this student has fully settled his/her indebtedness to the Language Laboratory and is herby cleared.</p>
     <form method="post" action="mass.php">
         <input type="text" name="language_name" placeholder="Name of Labouratory Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>

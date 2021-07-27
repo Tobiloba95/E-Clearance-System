@@ -65,6 +65,7 @@
 
         </div>
     </header>
+    <h2>Bursary Department</h2>
     <p>This is to certify that this student is not owing the university and is hereby cleared</p>
     <form method="post" action="academic.php">
         <input type="text" name="bursary_name" placeholder="Name of Bursary Staff...">

@@ -64,9 +64,9 @@
             <p><b>GRADUATING STUDENT OF ANCHOR UNIVERSITY LAGOS</b></p>
 
         </div>
-    </header
+    </header>
     <h2>Chemistry Labouratory</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the Chemistry Laboratory and is herby cleared.</p>
+    <p>This is to certify that this student has fully settled his/her indebtedness to the Chemistry Laboratory and is herby cleared.</p>
     <form method="post" action="biochemistry.php">
         <input type="text" name="chemistry_name" placeholder="Name of Laboratory Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>

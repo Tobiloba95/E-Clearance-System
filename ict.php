@@ -66,7 +66,7 @@
         </div>
     </header>
     <h2>ICT UNIT</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the ICT Unit and is herby cleared.</p>
+    <p>This is to certify that this student has fully settled his/her indebtedness to the ICT Unit and is herby cleared.</p>
     <form method="post" action="sport.php">
         <input type="text" name="ict_name" placeholder="Name of ICT Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>

@@ -65,7 +65,7 @@
         </div>
     </header>
     <h2>Microbiology Labouratory</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the Microbiology Laboratory and is herby cleared.</p>
+    <p>This is to certify that this student has fully settled his/her indebtedness to the Microbiology Laboratory and is herby cleared.</p>
     <form method="post" action="chemistry.php">
         <input type="text" name="microbiology_name" placeholder="Name of Laboratory Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>

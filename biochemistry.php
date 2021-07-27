@@ -66,7 +66,7 @@
         </div>
     </header>
     <h2>Biochemistry Labouratory</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the Biochemistry Laboratory and is herby cleared.</p>
+    <p>This is to certify that this student has fully settled his/her indebtedness to the Biochemistry Laboratory and is herby cleared.</p>
     <form method="post" action="physics.php">
         <input type="text" name="biochemistry_name" placeholder="full name...">
         <span class="error"> <?php echo $nameErr; ?></span>

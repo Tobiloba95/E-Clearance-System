@@ -64,9 +64,10 @@
             <p><b>GRADUATING STUDENT OF ANCHOR UNIVERSITY LAGOS</b></p>
 
         </div>
-    <header>
+</header>
+
     <h2>Mass Communication Labouratory</h2>
-    <p>This is to certify that this student has fully sttled his/her indebtedness to the Mass Communication Laboratory and is herby cleared.</p>
+    <p>This is to certify that this student has fully settled his/her indebtedness to the Mass Communication Laboratory and is herby cleared.</p>
     <form method="post" action="headdept.php">
         <input type="text" name="mass_name" placeholder="Name of Studio Staff...">
         <span class="error"> <?php echo $nameErr; ?></span>
